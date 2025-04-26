@@ -1,0 +1,42 @@
+{
+  "originHash" : "2ec35713a39555ede3dfbdbe109aff77f18ee5428c69a05abadeacffe57e8c43",
+  "pins" : [
+    {
+      "identity" : "ogg-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vector-im/ogg-swift.git",
+      "state" : {
+        "revision" : "9d82ed838404f10b607a1a1689f404563e9115c3",
+        "version" : "0.8.3"
+      }
+    },
+    {
+      "identity" : "oggdecoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/arkasas/OggDecoder",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e94c8ca23cf2a66feab53d795117ae513c273db8"
+      }
+    },
+    {
+      "identity" : "opus-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vector-im/opus-swift",
+      "state" : {
+        "revision" : "11f1887767cbc87c4b64b789ee830b779cc744cb",
+        "version" : "0.8.4"
+      }
+    },
+    {
+      "identity" : "swift-ogg?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/element-hq/swift-ogg?tab=readme-ov-file",
+      "state" : {
+        "revision" : "d60d4dd3eaaa3b07eafed76420ea03b79a516a13",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}
