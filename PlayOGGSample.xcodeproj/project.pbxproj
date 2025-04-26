@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5ACBE6762D91F2030058DC89 /* OggDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACBE6752D91F2030058DC89 /* OggDecoder */; };
+		5ACBE6792D91F4200058DC89 /* SwiftOGG in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACBE6782D91F4200058DC89 /* SwiftOGG */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5ACBE6492D9186340058DC89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ACBE6792D91F4200058DC89 /* SwiftOGG in Frameworks */,
+				5ACBE6762D91F2030058DC89 /* OggDecoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = PlayOGGSample;
 			packageProductDependencies = (
+				5ACBE6752D91F2030058DC89 /* OggDecoder */,
+				5ACBE6782D91F4200058DC89 /* SwiftOGG */,
 			);
 			productName = PlayOGGSample;
 			productReference = 5ACBE6382D9186320058DC89 /* PlayOGGSample.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 5ACBE62F2D9186320058DC89;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5ACBE6742D91F2030058DC89 /* XCRemoteSwiftPackageReference "OggDecoder" */,
+				5ACBE6772D91F4200058DC89 /* XCRemoteSwiftPackageReference "swift-ogg" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5ACBE6392D9186320058DC89 /* Products */;
 			projectDirPath = "";
@@ -404,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +573,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ACBE6742D91F2030058DC89 /* XCRemoteSwiftPackageReference "OggDecoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/arkasas/OggDecoder";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5ACBE6772D91F4200058DC89 /* XCRemoteSwiftPackageReference "swift-ogg" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/element-hq/swift-ogg?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ACBE6752D91F2030058DC89 /* OggDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACBE6742D91F2030058DC89 /* XCRemoteSwiftPackageReference "OggDecoder" */;
+			productName = OggDecoder;
+		};
+		5ACBE6782D91F4200058DC89 /* SwiftOGG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACBE6772D91F4200058DC89 /* XCRemoteSwiftPackageReference "swift-ogg" */;
+			productName = SwiftOGG;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5ACBE6302D9186320058DC89 /* Project object */;
 }
